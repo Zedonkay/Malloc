@@ -63,17 +63,3 @@ Through this project, I have gained a deeper understanding of:
 *   **Performance Optimization**: Techniques to minimize fragmentation and improve throughput.
 *   **System Programming**: Interacting with the operating system (e.g., `sbrk`) to manage the heap.
 *   **Debugging**: Identifying and resolving complex memory-related bugs.
-
-## Contributing
-
-This repository is primarily for demonstrating my personal solution to the Malloc Lab. However, if you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-(Optional: Add a license section if you have a specific license for your code. E.g., MIT License)
-
-## Contact
-
-[Your Name] - [Your Email/LinkedIn Profile]
-
-Feel free to connect with me if you have any questions or feedback!
