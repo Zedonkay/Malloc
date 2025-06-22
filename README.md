@@ -11,11 +11,17 @@ This repository contains my solution for the Malloc Lab, a fundamental computer 
 ## Features and Implementation Details
 
 My implementation focuses on balancing throughput and memory utilization. Key features include:
+*   **Implicit Free List Allocator**: Implemented a baseline allocator using an implicit free list, where all blocks (allocated or free) are linked implicitly. Provided foundational understanding of memory layout, block metadata, and linear allocation search.
 
-*   **Implicit Free List Allocator**: The initial implementation utilizes an implicit free list, where all blocks (allocated or free) are linked implicitly. This simple approach provides a baseline for understanding memory allocation.
-*   **Explicit Free List Allocator**: (Potentially describe if implemented a more advanced allocator, e.g., using a doubly linked list for free blocks)
-*   **Segregated Free Lists**: (Potentially describe if implemented, how it improves performance for different block sizes)
-*   **Optimizations**: (Mention any specific optimizations, e.g., boundary tags, coalescing, best-fit/first-fit strategies, minimizing fragmentation)
+*   **Explicit Free List Allocator**: *(Optional — not implemented)*
+
+*   **Segregated Free Lists**: Implemented segregated free lists to categorize free blocks by size class, drastically improving allocation speed and reducing search time for suitable blocks.
+
+*   **Optimizations**:
+    *   Integrated **boundary tags** and **bi-directional coalescing** to reduce external fragmentation by merging adjacent free blocks during both allocation and free operations.
+    *   Used **best-fit** and **first-fit within size class** strategies to enhance placement efficiency.
+    *   Minimized fragmentation and improved performance for varied allocation sizes through precise block management and fast-fit strategies.
+
 *   **Robustness**: The allocator is designed to handle various allocation patterns, including large and small requests, and provides mechanisms for error checking.
 
 ## Building and Running
@@ -68,17 +74,3 @@ Through this project, I have gained a deeper understanding of:
 *   **Performance Optimization**: Techniques to minimize fragmentation and improve throughput.
 *   **System Programming**: Interacting with the operating system (e.g., `sbrk`) to manage the heap.
 *   **Debugging**: Identifying and resolving complex memory-related bugs.
-
-## Contributing
-
-This repository is primarily for demonstrating my personal solution to the Malloc Lab. However, if you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-(Optional: Add a license section if you have a specific license for your code. E.g., MIT License)
-
-## Contact
-
-[Your Name] - [Your Email/LinkedIn Profile]
-
-Feel free to connect with me if you have any questions or feedback!
