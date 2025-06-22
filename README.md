@@ -1,9 +1,5 @@
 # Malloc Lab: Custom Memory Allocator
 
-## Project Summary
-
-A high-performance implementation of the C standard library's memory allocation functions (`malloc`, `free`, `realloc`) from scratch. This project demonstrates efficient memory management techniques, including block allocation strategies, memory coalescing, and fragmentation reduction. The implementation is tested using a custom driver program that evaluates both performance and correctness across various allocation patterns.
-
 ## Project Overview
 
 This repository contains my solution for the Malloc Lab, a fundamental computer systems programming assignment. The goal of this lab is to implement a dynamic memory allocator (i.e., `malloc`, `free`, `realloc`) from scratch. This project provides hands-on experience with memory management, heap organization, and performance optimization techniques, which are crucial for understanding how modern operating systems and applications manage memory.
